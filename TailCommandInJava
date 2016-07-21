@@ -1,0 +1,47 @@
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+
+
+
+	public class  TailCommand{
+	    public static void main(String[] args) throws Exception { 
+	        FileInputStream in1 = new FileInputStream("log.txt");
+	        FileInputStream in2 = new FileInputStream("log.txt");
+	        BufferedReader br1 = new BufferedReader(new InputStreamReader(in1));
+	        BufferedReader br2 = new BufferedReader(new InputStreamReader(in2));
+	        String tmp1 = null;
+	        
+	        int tail = 3;
+	         
+	        for (int i = 0; i < tail; i++){
+	        	br2.readLine();
+	        }
+	        while ((tmp1 = br1.readLine()) != null) {
+
+	            if (br2.readLine() == null){
+	            	System.out.println(tmp1);
+	            }
+	        }
+	    }
+	    
+	}
+	
+	output:
+jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+llllllllllllllllllllllllllllllllll
+
+log.txt :
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+ccccccccccccccccccccccccccccccccc
+ddddddddddddddddddddddddddddddddddd
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+fffffffffffffffffffffffffffffffff
+gggggggggggggggggggggggggggggggggggg
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+llllllllllllllllllllllllllllllllll
