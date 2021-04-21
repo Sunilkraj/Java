@@ -1,2 +1,6 @@
-Stream API is added in Java 8 and works very well in conjunction with lambda expressions. You can create a pipeline of stream operations to manipulate data by performing operations like search, filter, sort, count, map etc.
-A stream can be visualized as a pipeline. A stream pipeline consists of a source (which might be an array, a collection, a generator function, an I/O channel, etc.), zero or more intermediate operations (which transform a stream into another stream, such as filter(Predicate)), and a terminal operation (which produces a result or side-effect, such as count() or forEach(Consumer)).
+Stream API is added in Java 8 and works very well in conjunction with lambda expressions. 
+You can create a pipeline of stream operations to manipulate data by performing operations like search, filter, sort, count, map etc.
+A stream can be visualized as a pipeline. A stream pipeline consists of a source (which might be an 
+array, a collection, a generator function, an I/O channel, etc.), zero or more intermediate operations 
+(which transform a stream into another stream, such as filter(Predicate)), 
+and a terminal operation (which produces a result or side-effect, such as count() or forEach(Consumer)).
