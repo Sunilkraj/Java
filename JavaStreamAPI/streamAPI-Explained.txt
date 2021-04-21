@@ -4,3 +4,5 @@ A stream can be visualized as a pipeline. A stream pipeline consists of a source
 array, a collection, a generator function, an I/O channel, etc.), zero or more intermediate operations 
 (which transform a stream into another stream, such as filter(Predicate)), 
 and a terminal operation (which produces a result or side-effect, such as count() or forEach(Consumer)).
+
+Refer: https://www.netjstech.com/2017/09/java-stream-api-interview-questions.html
